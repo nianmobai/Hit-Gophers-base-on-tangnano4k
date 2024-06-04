@@ -1,0 +1,28 @@
+[
+ {
+  "InstFile" : "D:/DOC/hardware_project/led_hard/src/top_hdl.v",
+  "InstLine" : 14,
+  "InstName" : "top_hdl",
+  "ModuleFile" : "D:/DOC/hardware_project/led_hard/src/top_hdl.v",
+  "ModuleLine" : 14,
+  "ModuleName" : "top_hdl",
+  "SubInsts" : [
+   {
+    "InstFile" : "D:/DOC/hardware_project/led_hard/src/top_hdl.v",
+    "InstLine" : 46,
+    "InstName" : "arm_cortex_m3_core",
+    "ModuleFile" : "D:/DOC/hardware_project/led_hard/src/gowin_empu/gowin_empu.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "Gowin_EMPU_Top"
+   },
+   {
+    "InstFile" : "D:/DOC/hardware_project/led_hard/src/top_hdl.v",
+    "InstLine" : 41,
+    "InstName" : "pll_ut0",
+    "ModuleFile" : "D:/DOC/hardware_project/led_hard/src/gowin_pllvr/gowin_pllvr.v",
+    "ModuleLine" : 9,
+    "ModuleName" : "Gowin_PLLVR"
+   }
+  ]
+ }
+]

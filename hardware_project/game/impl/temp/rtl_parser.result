@@ -1,0 +1,28 @@
+[
+ {
+  "InstFile" : "D:/DOC/hardware_project/game/src/game_top_hdl.v",
+  "InstLine" : 2,
+  "InstName" : "top_hdl",
+  "ModuleFile" : "D:/DOC/hardware_project/game/src/game_top_hdl.v",
+  "ModuleLine" : 2,
+  "ModuleName" : "top_hdl",
+  "SubInsts" : [
+   {
+    "InstFile" : "D:/DOC/hardware_project/game/src/game_top_hdl.v",
+    "InstLine" : 69,
+    "InstName" : "CotexM3",
+    "ModuleFile" : "D:/DOC/hardware_project/game/src/gowin_empu/gowin_empu.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "Gowin_EMPU_Top"
+   },
+   {
+    "InstFile" : "D:/DOC/hardware_project/game/src/game_top_hdl.v",
+    "InstLine" : 64,
+    "InstName" : "pll_ut0",
+    "ModuleFile" : "D:/DOC/hardware_project/game/src/gowin_pllvr/gowin_pllvr.v",
+    "ModuleLine" : 9,
+    "ModuleName" : "Gowin_PLLVR"
+   }
+  ]
+ }
+]

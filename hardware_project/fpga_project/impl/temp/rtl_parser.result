@@ -1,0 +1,28 @@
+[
+ {
+  "InstFile" : "D:/DOC/hardware_project/fpga_project/src/top_hdl.v",
+  "InstLine" : 3,
+  "InstName" : "top_hdl",
+  "ModuleFile" : "D:/DOC/hardware_project/fpga_project/src/top_hdl.v",
+  "ModuleLine" : 3,
+  "ModuleName" : "top_hdl",
+  "SubInsts" : [
+   {
+    "InstFile" : "D:/DOC/hardware_project/fpga_project/src/top_hdl.v",
+    "InstLine" : 36,
+    "InstName" : "arm_cortex_m3_core",
+    "ModuleFile" : "D:/DOC/hardware_project/fpga_project/src/gowin_empu/gowin_empu.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "Gowin_EMPU_Top"
+   },
+   {
+    "InstFile" : "D:/DOC/hardware_project/fpga_project/src/top_hdl.v",
+    "InstLine" : 31,
+    "InstName" : "pll_ut0",
+    "ModuleFile" : "D:/DOC/hardware_project/fpga_project/src/gowin_pllvr/gowin_pllvr.v",
+    "ModuleLine" : 9,
+    "ModuleName" : "Gowin_PLLVR"
+   }
+  ]
+ }
+]
