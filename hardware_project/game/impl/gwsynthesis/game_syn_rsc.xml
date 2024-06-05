@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Module name="top_hdl" Register="167" Alu="8" Lut="186" Bsram="8">
+<Module name="top_hdl" Register="62" Alu="8" Lut="40" Bsram="8">
  <SubModule name="pll_ut0"/>
 </Module>

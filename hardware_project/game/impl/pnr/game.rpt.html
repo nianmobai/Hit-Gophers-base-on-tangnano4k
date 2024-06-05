@@ -79,7 +79,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Created Time</td>
-<td>Wed Jun 05 10:48:37 2024
+<td>Wed Jun 05 20:22:07 2024
 </td>
 </tr>
 <tr>
@@ -93,24 +93,24 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <tr>
 <td class="label">Place & Route Process</td>
 <td>Running placement:
-   Placement Phase 0: CPU time = 0h 0m 0.054s, Elapsed time = 0h 0m 0.054s
-   Placement Phase 1: CPU time = 0h 0m 0.059s, Elapsed time = 0h 0m 0.058s
-   Placement Phase 2: CPU time = 0h 0m 0.021s, Elapsed time = 0h 0m 0.022s
-   Placement Phase 3: CPU time = 0h 0m 0.762s, Elapsed time = 0h 0m 0.762s
-   Total Placement: CPU time = 0h 0m 0.896s, Elapsed time = 0h 0m 0.896s
+   Placement Phase 0: CPU time = 0h 0m 0.018s, Elapsed time = 0h 0m 0.019s
+   Placement Phase 1: CPU time = 0h 0m 0.051s, Elapsed time = 0h 0m 0.051s
+   Placement Phase 2: CPU time = 0h 0m 0.004s, Elapsed time = 0h 0m 0.004s
+   Placement Phase 3: CPU time = 0h 0m 0.692s, Elapsed time = 0h 0m 0.692s
+   Total Placement: CPU time = 0h 0m 0.765s, Elapsed time = 0h 0m 0.766s
 Running routing:
-   Routing Phase 0: CPU time = 0h 0m 0.001s, Elapsed time = 0h 0m 0.001s
-   Routing Phase 1: CPU time = 0h 0m 0.039s, Elapsed time = 0h 0m 0.038s
-   Routing Phase 2: CPU time = 0h 0m 0.159s, Elapsed time = 0h 0m 0.16s
+   Routing Phase 0: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s
+   Routing Phase 1: CPU time = 0h 0m 0.032s, Elapsed time = 0h 0m 0.031s
+   Routing Phase 2: CPU time = 0h 0m 0.094s, Elapsed time = 0h 0m 0.094s
    Routing Phase 3: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s
-   Total Routing: CPU time = 0h 0m 0.199s, Elapsed time = 0h 0m 0.199s
+   Total Routing: CPU time = 0h 0m 0.126s, Elapsed time = 0h 0m 0.125s
 Generate output files:
-   CPU time = 0h 0m 0.69s, Elapsed time = 0h 0m 0.689s
+   CPU time = 0h 0m 0.681s, Elapsed time = 0h 0m 0.68s
 </td>
 </tr>
 <tr>
 <td class="label">Total Time and Memory Usage</td>
-<td>CPU time = 0h 0m 2s, Elapsed time = 0h 0m 2s, Peak memory usage = 187MB</td>
+<td>CPU time = 0h 0m 2s, Elapsed time = 0h 0m 2s, Peak memory usage = 185MB</td>
 </tr>
 </table>
 <br/>
@@ -125,12 +125,12 @@ Generate output files:
 </tr>
 <tr>
 <td class="label">Logic</td>
-<td>220/4608</td>
-<td>5%</td>
+<td>75/4608</td>
+<td>2%</td>
 </tr>
 <tr>
 <td class="label">&nbsp &nbsp --LUT,ALU,ROM16</td>
-<td>220(211 LUT, 9 ALU, 0 ROM16)</td>
+<td>75(66 LUT, 9 ALU, 0 ROM16)</td>
 <td>-</td>
 </tr>
 <tr>
@@ -140,8 +140,8 @@ Generate output files:
 </tr>
 <tr>
 <td class="label">Register</td>
-<td>183/3570</td>
-<td>6%</td>
+<td>78/3570</td>
+<td>3%</td>
 </tr>
 <tr>
 <td class="label">&nbsp &nbsp --Logic Register as Latch</td>
@@ -150,8 +150,8 @@ Generate output files:
 </tr>
 <tr>
 <td class="label">&nbsp &nbsp --Logic Register as FF</td>
-<td>181/3456</td>
-<td>6%</td>
+<td>78/3456</td>
+<td>3%</td>
 </tr>
 <tr>
 <td class="label">&nbsp &nbsp --I/O Register as Latch</td>
@@ -160,27 +160,27 @@ Generate output files:
 </tr>
 <tr>
 <td class="label">&nbsp &nbsp --I/O Register as FF</td>
-<td>2/114</td>
-<td>2%</td>
+<td>0/114</td>
+<td>0%</td>
 </tr>
 <tr>
 <td class="label">CLS</td>
-<td>175/2304</td>
-<td>8%</td>
+<td>62/2304</td>
+<td>3%</td>
 </tr>
 <tr>
 <td class="label">I/O Port</td>
-<td>19</td>
-<td>-</td>
-</tr>
-<tr>
-<td class="label">I/O Buf</td>
 <td>18</td>
 <td>-</td>
 </tr>
 <tr>
+<td class="label">I/O Buf</td>
+<td>17</td>
+<td>-</td>
+</tr>
+<tr>
 <td class="label"> &nbsp &nbsp --Input Buf</td>
-<td>7</td>
+<td>6</td>
 <td>-</td>
 </tr>
 <tr>
@@ -264,7 +264,7 @@ Generate output files:
 </tr>
 <tr>
 <td class="label">bank 2</td>
-<td>5/9(55%)</td>
+<td>4/9(44%)</td>
 </tr>
 <tr>
 <td class="label">bank 3</td>
@@ -284,7 +284,7 @@ Generate output files:
 </tr>
 <tr>
 <td class="label">LW</td>
-<td>1/8(13%)</td>
+<td>0/8(0%)</td>
 </tr>
 <tr>
 <td class="label">GCLK_PIN</td>
@@ -320,11 +320,6 @@ Generate output files:
 <td class="label">clk_60m</td>
 <td>PRIMARY</td>
 <td> LEFT RIGHT</td>
-</tr>
-<tr>
-<td class="label">gresetn_d</td>
-<td>LW</td>
-<td> -</td>
 </tr>
 </table>
 <br/>
@@ -475,24 +470,6 @@ Generate output files:
 <td>1.8</td>
 </tr>
 <tr>
-<td class="label">mosi_input</td>
-<td></td>
-<td>27/2</td>
-<td>Y</td>
-<td>in</td>
-<td>IOR17[B]</td>
-<td>LVCMOS18</td>
-<td>NA</td>
-<td>UP</td>
-<td>ON</td>
-<td>NONE</td>
-<td>NA</td>
-<td>NA</td>
-<td>OFF</td>
-<td>NA</td>
-<td>1.8</td>
-</tr>
-<tr>
 <td class="label">led</td>
 <td></td>
 <td>10/0</td>
@@ -547,7 +524,7 @@ Generate output files:
 <td>1.8</td>
 </tr>
 <tr>
-<td class="label">mosi_out</td>
+<td class="label">sda_out</td>
 <td></td>
 <td>28/2</td>
 <td>Y</td>
@@ -1304,7 +1281,7 @@ Generate output files:
 </tr>
 <tr>
 <td class="label">28/2</td>
-<td>mosi_out</td>
+<td>sda_out</td>
 <td>out</td>
 <td>IOR17[A]</td>
 <td>LVCMOS18</td>
@@ -1320,7 +1297,7 @@ Generate output files:
 </tr>
 <tr>
 <td class="label">27/2</td>
-<td>mosi_input</td>
+<td>-</td>
 <td>in</td>
 <td>IOR17[B]</td>
 <td>LVCMOS18</td>
@@ -1330,7 +1307,7 @@ Generate output files:
 <td>NONE</td>
 <td>NA</td>
 <td>NA</td>
-<td>OFF</td>
+<td>NA</td>
 <td>NA</td>
 <td>1.8</td>
 </tr>

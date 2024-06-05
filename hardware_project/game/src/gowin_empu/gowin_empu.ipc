@@ -9,6 +9,5 @@ version=1.0
 [Config]
 ENABLE_GPIO=true
 ENABLE_GPIO_IO=false
-ENABLE_SPI=true
 LANG=0
 Synthesis_tool=GowinSynthesis

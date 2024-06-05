@@ -4,7 +4,7 @@
 //GOWIN Version: V1.9.9 Beta-4 Education
 //Part Number: GW1NSR-LV4CQN48PC6/I5
 //Device: GW1NSR-4C
-//Created Time: Wed Jun 05 10:38:43 2024
+//Created Time: Wed Jun 05 20:14:28 2024
 
 //Change the instance name and port connections to the signal names
 //--------Copy here to design--------
@@ -14,10 +14,6 @@
 		.gpioin(gpioin_i), //input [15:0] gpioin
 		.gpioout(gpioout_o), //output [15:0] gpioout
 		.gpioouten(gpioouten_o), //output [15:0] gpioouten
-		.mosi(mosi_o), //output mosi
-		.miso(miso_i), //input miso
-		.sclk(sclk_o), //output sclk
-		.nss(nss_o), //output nss
 		.reset_n(reset_n_i) //input reset_n
 	);
 

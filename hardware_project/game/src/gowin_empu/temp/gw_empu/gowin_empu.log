@@ -28,9 +28,8 @@ WARN  (EX3670) : Actual bit length ** differs from formal bit length ** for port
 Compiling module '**'("D:\GoWinSoftware\Gowin\Gowin_V1.9.9Beta-4_Education\IDE\ipcore\gowin_empu_gw1ns4\data\gowin_empu.v":0)
 Compiling module '**'("D:\GoWinSoftware\Gowin\Gowin_V1.9.9Beta-4_Education\IDE\ipcore\gowin_empu_gw1ns4\data\gowin_empu.v":0)
 Compiling module '**'("D:\GoWinSoftware\Gowin\Gowin_V1.9.9Beta-4_Education\IDE\ipcore\gowin_empu_gw1ns4\data\gowin_empu.v":0)
-Compiling module '**'("D:\GoWinSoftware\Gowin\Gowin_V1.9.9Beta-4_Education\IDE\ipcore\gowin_empu_gw1ns4\data\gowin_empu.v":0)
-Compiling module '**'("D:\GoWinSoftware\Gowin\Gowin_V1.9.9Beta-4_Education\IDE\ipcore\gowin_empu_gw1ns4\data\gowin_empu.v":0)
 WARN  (EX1998) : Net '**' does not have a driver("D:\GoWinSoftware\Gowin\Gowin_V1.9.9Beta-4_Education\IDE\ipcore\gowin_empu_gw1ns4\data\gowin_empu.v":0)
+WARN  (EX2565) : Input '**' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\GoWinSoftware\Gowin\Gowin_V1.9.9Beta-4_Education\IDE\ipcore\gowin_empu_gw1ns4\data\gowin_empu.v":0)
 WARN  (EX2565) : Input '**' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\GoWinSoftware\Gowin\Gowin_V1.9.9Beta-4_Education\IDE\ipcore\gowin_empu_gw1ns4\data\gowin_empu.v":0)
 WARN  (EX2565) : Input '**' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\GoWinSoftware\Gowin\Gowin_V1.9.9Beta-4_Education\IDE\ipcore\gowin_empu_gw1ns4\data\gowin_empu.v":0)
 WARN  (EX2565) : Input '**' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\GoWinSoftware\Gowin\Gowin_V1.9.9Beta-4_Education\IDE\ipcore\gowin_empu_gw1ns4\data\gowin_empu.v":0)
@@ -446,6 +445,9 @@ WARN  (EX0211) : The output port "SCLOUT" of module "gw_peripherals_interconnect
 WARN  (EX0211) : The output port "SCLOUTEN" of module "gw_peripherals_interconnect" has no driver, assigning undriven bits to Z, simulation mismatch possible("D:\GoWinSoftware\Gowin\Gowin_V1.9.9Beta-4_Education\IDE\ipcore\gowin_empu_gw1ns4\data\gowin_empu.v":0)
 WARN  (EX0211) : The output port "SDAOUT" of module "gw_peripherals_interconnect" has no driver, assigning undriven bits to Z, simulation mismatch possible("D:\GoWinSoftware\Gowin\Gowin_V1.9.9Beta-4_Education\IDE\ipcore\gowin_empu_gw1ns4\data\gowin_empu.v":0)
 WARN  (EX0211) : The output port "SDAOUTEN" of module "gw_peripherals_interconnect" has no driver, assigning undriven bits to Z, simulation mismatch possible("D:\GoWinSoftware\Gowin\Gowin_V1.9.9Beta-4_Education\IDE\ipcore\gowin_empu_gw1ns4\data\gowin_empu.v":0)
+WARN  (EX0211) : The output port "MOSI" of module "gw_peripherals_interconnect" has no driver, assigning undriven bits to Z, simulation mismatch possible("D:\GoWinSoftware\Gowin\Gowin_V1.9.9Beta-4_Education\IDE\ipcore\gowin_empu_gw1ns4\data\gowin_empu.v":0)
+WARN  (EX0211) : The output port "SCLK" of module "gw_peripherals_interconnect" has no driver, assigning undriven bits to Z, simulation mismatch possible("D:\GoWinSoftware\Gowin\Gowin_V1.9.9Beta-4_Education\IDE\ipcore\gowin_empu_gw1ns4\data\gowin_empu.v":0)
+WARN  (EX0211) : The output port "NSS" of module "gw_peripherals_interconnect" has no driver, assigning undriven bits to Z, simulation mismatch possible("D:\GoWinSoftware\Gowin\Gowin_V1.9.9Beta-4_Education\IDE\ipcore\gowin_empu_gw1ns4\data\gowin_empu.v":0)
 [5%] Running netlist conversion ...
 Running device independent optimization ...
 [10%] Optimizing Phase 0 completed
@@ -462,7 +464,6 @@ Running technical mapping ...
 [75%] Tech-Mapping Phase 2 completed
 [80%] Tech-Mapping Phase 3 completed
 [90%] Tech-Mapping Phase 4 completed
-WARN  (NL0002) : The module "gw_int_apb2_decoder" instantiated to "u_gw_spi_decoder_usb" is swept in optimizing("D:\GoWinSoftware\Gowin\Gowin_V1.9.9Beta-4_Education\IDE\ipcore\gowin_empu_gw1ns4\data\gowin_empu.v":0)
 [95%] Generate netlist file "D:\DOC\nianmobai\Hit-Gophers-base-on-tangnano4k\hardware_project\game\src\gowin_empu\temp\gw_empu\gowin_empu.vg" completed
 Generate template file "D:\DOC\nianmobai\Hit-Gophers-base-on-tangnano4k\hardware_project\game\src\gowin_empu\temp\gw_empu\gowin_empu_tmp.v" completed
 [100%] Generate report file "D:\DOC\nianmobai\Hit-Gophers-base-on-tangnano4k\hardware_project\game\src\gowin_empu\temp\gw_empu\gowin_empu_syn.rpt.html" completed

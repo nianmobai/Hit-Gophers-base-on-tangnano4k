@@ -5,13 +5,12 @@ module top_hdl(
     input gresetn,    //arm核置位信号
     input key,//按键输入信号
     input [3:0]  KeyX,//键盘扫略输入的横向信号
-    input mosi_input,//SPI输入
 
     //Outputs
     output  led,//led灯信号，用以标志按键按下
     output sclk_out,//SPI的时钟输出
     output nss_out,//从设备使能信号
-    output mosi_out,//SPI输出信号
+    output sda_out,//SPI输出信号
     output [3:0] KeyY,//键盘扫略输出的纵向信号
     output BLK,//屏幕
     output RES,//屏幕
@@ -64,6 +63,11 @@ assign BLK = (arm_gpio_out[1] == 1'b1);//
 assign RES = (arm_gpio_out[2] == 1'b1);
 assign DC = (arm_gpio_out[3] == 1'b1);
 
+//SPI port
+assign sclk_out = (arm_gpio_out[4] == 1'b1);
+assign nss_out = (arm_gpio_out[5] == 1'b1);
+assign sda_out = (arm_gpio_out[6] == 1'b1);
+
 assign KeyY[3:0] = keyscan[3:0];
 
 Gowin_PLLVR pll_ut0(
@@ -77,12 +81,7 @@ Gowin_EMPU_Top CotexM3(
 
 		.gpioin(arm_gpio_in), //input [15:0] gpioin GPIO输入
 		.gpioout(arm_gpio_out), //output [15:0] gpioout GPIO输出
-		.gpioouten(arm_gpio_outen), //output [15:0] gpioouten GPIO输出后
-
-		.mosi(mosi_out), //output mosi SPI输出
-		.miso(mosi_input), //input miso SPI输入
-		.sclk(sclk_out), //output sclk SPI时钟信号输入
-		.nss(nss_out)//output nss 从设备使能信号
+		.gpioouten(arm_gpio_outen) //output [15:0] gpioouten GPIO输出后
 
 	);
 
