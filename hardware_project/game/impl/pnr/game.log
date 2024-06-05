@@ -1,7 +1,7 @@
-Reading netlist file: "D:\DOC\hardware_project\game\impl\gwsynthesis\game.vg"
-Parsing netlist file "D:\DOC\hardware_project\game\impl\gwsynthesis\game.vg" completed
+Reading netlist file: "D:\DOC\nianmobai\Hit-Gophers-base-on-tangnano4k\hardware_project\game\impl\gwsynthesis\game.vg"
+Parsing netlist file "D:\DOC\nianmobai\Hit-Gophers-base-on-tangnano4k\hardware_project\game\impl\gwsynthesis\game.vg" completed
 Processing netlist completed
-Reading constraint file: "D:\DOC\hardware_project\game\src\game.cst"
+Reading constraint file: "D:\DOC\nianmobai\Hit-Gophers-base-on-tangnano4k\hardware_project\game\src\game.cst"
 Physical Constraint parsed completed
 Running placement......
 [10%] Placement Phase 0 completed
@@ -21,10 +21,10 @@ Bitstream generation in progress......
 Bitstream generation completed
 Running power analysis......
 [100%] Power analysis completed
-Generate file "D:\DOC\hardware_project\game\impl\pnr\game.power.html" completed
-Generate file "D:\DOC\hardware_project\game\impl\pnr\game.pin.html" completed
-Generate file "D:\DOC\hardware_project\game\impl\pnr\game.rpt.html" completed
-Generate file "D:\DOC\hardware_project\game\impl\pnr\game.rpt.txt" completed
-Generate file "D:\DOC\hardware_project\game\impl\pnr\game.tr.html" completed
-Tue Jun 04 15:10:17 2024
+Generate file "D:\DOC\nianmobai\Hit-Gophers-base-on-tangnano4k\hardware_project\game\impl\pnr\game.power.html" completed
+Generate file "D:\DOC\nianmobai\Hit-Gophers-base-on-tangnano4k\hardware_project\game\impl\pnr\game.pin.html" completed
+Generate file "D:\DOC\nianmobai\Hit-Gophers-base-on-tangnano4k\hardware_project\game\impl\pnr\game.rpt.html" completed
+Generate file "D:\DOC\nianmobai\Hit-Gophers-base-on-tangnano4k\hardware_project\game\impl\pnr\game.rpt.txt" completed
+Generate file "D:\DOC\nianmobai\Hit-Gophers-base-on-tangnano4k\hardware_project\game\impl\pnr\game.tr.html" completed
+Wed Jun 05 10:48:37 2024
 

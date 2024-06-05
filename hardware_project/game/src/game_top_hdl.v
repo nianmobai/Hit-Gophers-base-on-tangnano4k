@@ -6,7 +6,6 @@ module top_hdl(
     input key,//按键输入信号
     input [3:0]  KeyX,//键盘扫略输入的横向信号
     input mosi_input,//SPI输入
-    input uart0_rxd_i,
 
     //Outputs
     output  led,//led灯信号，用以标志按键按下
@@ -14,7 +13,9 @@ module top_hdl(
     output nss_out,//从设备使能信号
     output mosi_out,//SPI输出信号
     output [3:0] KeyY,//键盘扫略输出的纵向信号
-    output uart0_txd_o
+    output BLK,//屏幕
+    output RES,//屏幕
+    output DC//
 );
 
 wire clk_60m;
@@ -58,7 +59,11 @@ begin
 end
 end
 
-assign led = (arm_gpio_out[15:0] == 16'Haaaa);
+assign led = (arm_gpio_out[0] == 1'b1);
+assign BLK = (arm_gpio_out[1] == 1'b1);//
+assign RES = (arm_gpio_out[2] == 1'b1);
+assign DC = (arm_gpio_out[3] == 1'b1);
+
 assign KeyY[3:0] = keyscan[3:0];
 
 Gowin_PLLVR pll_ut0(
@@ -66,7 +71,7 @@ Gowin_PLLVR pll_ut0(
     .clkin(gclk) //输入27Mhz的时钟频率
 );
 
-	Gowin_EMPU_Top CotexM3(
+Gowin_EMPU_Top CotexM3(
 		.sys_clk(clk_60m), //input sys_clk 输入时钟信号
         .reset_n(arm_resetn), //input reset_n 输入复位信号
 
@@ -77,10 +82,8 @@ Gowin_PLLVR pll_ut0(
 		.mosi(mosi_out), //output mosi SPI输出
 		.miso(mosi_input), //input miso SPI输入
 		.sclk(sclk_out), //output sclk SPI时钟信号输入
-		.nss(nss_out),//output nss 从设备使能信号
+		.nss(nss_out)//output nss 从设备使能信号
 
-        .uart0_rxd(uart0_rxd_i), //input uart0_rxd
-		.uart0_txd(uart0_txd_o) //output uart0_txd
 	);
 
 endmodule   //top_hdl end

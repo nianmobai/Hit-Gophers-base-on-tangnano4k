@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<Module name="top_hdl" Register="33" Lut="33" Bsram="8">
- <SubModule name="pll_ut0"/>
-</Module>

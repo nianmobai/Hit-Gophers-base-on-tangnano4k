@@ -12,5 +12,3 @@ ENABLE_GPIO_IO=false
 ENABLE_SPI=true
 LANG=0
 Synthesis_tool=GowinSynthesis
-ENABLE_UART0=true
-ENABLE_UART1=false

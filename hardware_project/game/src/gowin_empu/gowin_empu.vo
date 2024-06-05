@@ -2,30 +2,26 @@
 //All rights reserved.
 //File Title: Post-PnR Simulation Model file
 //GOWIN Version: V1.9.9 Beta-4 Education
-//Created Time: Mon Jun 03 11:59:21 2024
+//Created Time: Wed Jun 05 10:38:44 2024
 
 `timescale 100 ps/100 ps
 module Gowin_EMPU_Top(
 	sys_clk,
 	gpioin,
-	uart0_rxd,
 	miso,
 	reset_n,
 	gpioout,
 	gpioouten,
-	uart0_txd,
 	mosi,
 	sclk,
 	nss
 );
 input sys_clk;
 input [15:0] gpioin;
-input uart0_rxd;
 input miso;
 input reset_n;
 output [15:0] gpioout;
 output [15:0] gpioouten;
-output uart0_txd;
 output mosi;
 output sclk;
 output nss;
@@ -40,8 +36,7 @@ wire nss;
 wire reset_n;
 wire sclk;
 wire sys_clk;
-wire uart0_rxd;
-wire uart0_txd;
+wire \Gowin_EMPU_inst/uart0_txd ;
 wire \Gowin_EMPU_inst/uart1_txd ;
 wire \Gowin_EMPU_inst/u_emcu_top_310_UART0BAUDTICK ;
 wire \Gowin_EMPU_inst/u_emcu_top_310_UART1BAUDTICK ;
@@ -334,7 +329,7 @@ EMCU \Gowin_EMPU_inst/u_emcu_top  (
 	.PORESETN(reset_n),
 	.SYSRESETN(reset_n),
 	.RTCSRCCLK(GND),
-	.UART0RXDI(uart0_rxd),
+	.UART0RXDI(GND),
 	.UART1RXDI(GND),
 	.TARGFLASH0HRESP(GND),
 	.TARGFLASH0EXRESP(GND),
@@ -373,7 +368,7 @@ EMCU \Gowin_EMPU_inst/u_emcu_top  (
 	.APBTARGEXP2PRDATA({GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, \Gowin_EMPU_inst/apbtargexp2_prdata [12], GND, \Gowin_EMPU_inst/apbtargexp2_prdata [10:0]}),
 	.MTXREMAP({VCC, VCC, VCC, VCC}),
 	.GPINT({GND, GND, GND, GND, GND}),
-	.UART0TXDO(uart0_txd),
+	.UART0TXDO(\Gowin_EMPU_inst/uart0_txd ),
 	.UART1TXDO(\Gowin_EMPU_inst/uart1_txd ),
 	.UART0BAUDTICK(\Gowin_EMPU_inst/u_emcu_top_310_UART0BAUDTICK ),
 	.UART1BAUDTICK(\Gowin_EMPU_inst/u_emcu_top_310_UART1BAUDTICK ),

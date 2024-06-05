@@ -2,15 +2,15 @@
  "Device" : "GW1NSR-4C",
  "Files" : [
   {
-   "Path" : "D:/DOC/hardware_project/game/src/game_top_hdl.v",
+   "Path" : "D:/DOC/nianmobai/Hit-Gophers-base-on-tangnano4k/hardware_project/game/src/game_top_hdl.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "D:/DOC/hardware_project/game/src/gowin_empu/gowin_empu.v",
+   "Path" : "D:/DOC/nianmobai/Hit-Gophers-base-on-tangnano4k/hardware_project/game/src/gowin_empu/gowin_empu.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "D:/DOC/hardware_project/game/src/gowin_pllvr/gowin_pllvr.v",
+   "Path" : "D:/DOC/nianmobai/Hit-Gophers-base-on-tangnano4k/hardware_project/game/src/gowin_pllvr/gowin_pllvr.v",
    "Type" : "verilog"
   }
  ],
@@ -18,7 +18,7 @@
 
  ],
  "LoopLimit" : 2000,
- "ResultFile" : "D:/DOC/hardware_project/game/impl/temp/rtl_parser.result",
+ "ResultFile" : "D:/DOC/nianmobai/Hit-Gophers-base-on-tangnano4k/hardware_project/game/impl/temp/rtl_parser.result",
  "Top" : "top_hdl",
  "VerilogStd" : "verilog_2001",
  "VhdlStd" : "vhdl_93"
