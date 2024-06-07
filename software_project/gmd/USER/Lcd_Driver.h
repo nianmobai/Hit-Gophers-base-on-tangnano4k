@@ -29,6 +29,7 @@ void Lcd_Init();
 void Lcd_SetXY(uint16_t x,uint16_t y);
 void Lcd_Clear(uint16_t Color);
 void ShowNum(uint16_t x_start,uint16_t y_start,const unsigned char *p,uint16_t num);
+void ShowChar(uint16_t x_start,uint16_t y_start,const unsigned char *p,uint16_t charnum);
 void DrawPixel(uint16_t x_start,uint16_t y_start,uint16_t Color);
 void ShowImage(uint16_t x_start,uint16_t y_start,uint16_t x_len,uint16_t y_len,const unsigned char *p);
 

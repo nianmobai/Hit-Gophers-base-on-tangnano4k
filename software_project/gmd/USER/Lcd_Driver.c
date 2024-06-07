@@ -101,6 +101,29 @@ void ShowNum(uint16_t x_start,uint16_t y_start,const unsigned char *p,uint16_t n
 		}
 	}
 }
+//写一个字母,入口参数分别为x开始像素坐标、数字对应数组、要显示的数字，大写在前，小写在后，字母表顺序,A对应1类推
+void ShowChar(uint16_t x_start,uint16_t y_start,const unsigned char *p,uint16_t charnum)
+{
+	unsigned char buff[16];
+		int k=0;
+		Lcd_Clear(WHITE);
+		Lcd_SetRegion(x_start,y_start,x_start+15,y_start+15);
+		for(int i=0;i<16;i++)
+		{
+			buff[i]=p[i+(charnum+9)*16];
+		}
+		for(uint16_t y=0;y<16;y++)
+		{
+			for(uint16_t x=0;x<8;x++)
+			{
+				k=x%8;
+				if(buff[y]&(0x80>>k))
+				{
+					DrawPixel(x_start+x,y_start+y,RED);
+				}
+			}
+		}
+}
 //显示图像，入口参数分别为x开始像素坐标、y开始像素坐标、x方向长度、y方向长度，图片对应数组
 void ShowImage(uint16_t x_start,uint16_t y_start,uint16_t x_len,uint16_t y_len,const unsigned char *p)//显示图像
 {

@@ -5,34 +5,34 @@
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
 ../USER/Lcd_Driver.c \
+../USER/NumandChar.c \
 ../USER/drv_gpio.c \
 ../USER/drv_timer.c \
 ../USER/drv_uart.c \
 ../USER/gw1ns4c_it.c \
 ../USER/main.c \
-../USER/num.c \
 ../USER/picture.c \
 ../USER/retarget.c 
 
 OBJS += \
 ./USER/Lcd_Driver.o \
+./USER/NumandChar.o \
 ./USER/drv_gpio.o \
 ./USER/drv_timer.o \
 ./USER/drv_uart.o \
 ./USER/gw1ns4c_it.o \
 ./USER/main.o \
-./USER/num.o \
 ./USER/picture.o \
 ./USER/retarget.o 
 
 C_DEPS += \
 ./USER/Lcd_Driver.d \
+./USER/NumandChar.d \
 ./USER/drv_gpio.d \
 ./USER/drv_timer.d \
 ./USER/drv_uart.d \
 ./USER/gw1ns4c_it.d \
 ./USER/main.d \
-./USER/num.d \
 ./USER/picture.d \
 ./USER/retarget.d 
 
