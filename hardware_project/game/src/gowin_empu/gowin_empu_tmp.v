@@ -4,7 +4,7 @@
 //GOWIN Version: V1.9.9 Beta-4 Education
 //Part Number: GW1NSR-LV4CQN48PC6/I5
 //Device: GW1NSR-4C
-//Created Time: Wed Jun 05 20:14:28 2024
+//Created Time: Fri Jun 07 09:57:38 2024
 
 //Change the instance name and port connections to the signal names
 //--------Copy here to design--------

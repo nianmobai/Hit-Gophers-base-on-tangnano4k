@@ -29,6 +29,7 @@ reg [15:0] arm_gpio_in;//gpio的输入，与4*4键盘矩阵耦合在一起
 reg [3:0] keyscan = 4'b0001;
 reg [8:0] count = 8'h00;
 
+wire valid;
 
 //循环扫略键盘
 always @(posedge gclk)
@@ -64,9 +65,9 @@ assign RES = (arm_gpio_out[2] == 1'b1);
 assign DC = (arm_gpio_out[3] == 1'b1);
 
 //SPI port
-assign sclk_out = (arm_gpio_out[4] == 1'b1);
-assign nss_out = (arm_gpio_out[5] == 1'b1);
-assign sda_out = (arm_gpio_out[6] == 1'b1);
+assign sclk_out = arm_gpio_out[4];
+assign nss_out = arm_gpio_out[5];
+assign sda_out = arm_gpio_out[6];
 
 assign KeyY[3:0] = keyscan[3:0];
 

@@ -9,7 +9,7 @@
   "SubInsts" : [
    {
     "InstFile" : "D:/DOC/nianmobai/Hit-Gophers-base-on-tangnano4k/hardware_project/game/src/game_top_hdl.v",
-    "InstLine" : 78,
+    "InstLine" : 79,
     "InstName" : "CotexM3",
     "ModuleFile" : "D:/DOC/nianmobai/Hit-Gophers-base-on-tangnano4k/hardware_project/game/src/gowin_empu/gowin_empu.v",
     "ModuleLine" : 1,
@@ -17,7 +17,7 @@
    },
    {
     "InstFile" : "D:/DOC/nianmobai/Hit-Gophers-base-on-tangnano4k/hardware_project/game/src/game_top_hdl.v",
-    "InstLine" : 73,
+    "InstLine" : 74,
     "InstName" : "pll_ut0",
     "ModuleFile" : "D:/DOC/nianmobai/Hit-Gophers-base-on-tangnano4k/hardware_project/game/src/gowin_pllvr/gowin_pllvr.v",
     "ModuleLine" : 9,
