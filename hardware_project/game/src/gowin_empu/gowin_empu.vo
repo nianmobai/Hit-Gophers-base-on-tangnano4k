@@ -2,7 +2,7 @@
 //All rights reserved.
 //File Title: Post-PnR Simulation Model file
 //GOWIN Version: V1.9.9 Beta-4 Education
-//Created Time: Wed Jun 05 20:14:30 2024
+//Created Time: Fri Jun 07 09:57:39 2024
 
 `timescale 100 ps/100 ps
 module Gowin_EMPU_Top(

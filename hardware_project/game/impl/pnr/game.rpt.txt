@@ -11,27 +11,27 @@
   <PnR Version>: V1.9.9 Beta-4 Education
   <Part Number>: GW1NSR-LV4CQN48PC6/I5
   <Device>: GW1NSR-4C
-  <Created Time>:Wed Jun 05 20:22:07 2024
+  <Created Time>:Fri Jun 07 18:42:00 2024
 
 
 2. PnR Details
 
   Running placement:
-    Placement Phase 0: CPU time = 0h 0m 0.018s, Elapsed time = 0h 0m 0.019s
-    Placement Phase 1: CPU time = 0h 0m 0.051s, Elapsed time = 0h 0m 0.051s
+    Placement Phase 0: CPU time = 0h 0m 0.021s, Elapsed time = 0h 0m 0.02s
+    Placement Phase 1: CPU time = 0h 0m 0.057s, Elapsed time = 0h 0m 0.057s
     Placement Phase 2: CPU time = 0h 0m 0.004s, Elapsed time = 0h 0m 0.004s
-    Placement Phase 3: CPU time = 0h 0m 0.692s, Elapsed time = 0h 0m 0.692s
-    Total Placement: CPU time = 0h 0m 0.765s, Elapsed time = 0h 0m 0.766s
+    Placement Phase 3: CPU time = 0h 0m 0.756s, Elapsed time = 0h 0m 0.756s
+    Total Placement: CPU time = 0h 0m 0.838s, Elapsed time = 0h 0m 0.837s
  Running routing:
     Routing Phase 0: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s
-    Routing Phase 1: CPU time = 0h 0m 0.032s, Elapsed time = 0h 0m 0.031s
-    Routing Phase 2: CPU time = 0h 0m 0.094s, Elapsed time = 0h 0m 0.094s
+    Routing Phase 1: CPU time = 0h 0m 0.035s, Elapsed time = 0h 0m 0.035s
+    Routing Phase 2: CPU time = 0h 0m 0.098s, Elapsed time = 0h 0m 0.098s
     Routing Phase 3: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s
-    Total Routing: CPU time = 0h 0m 0.126s, Elapsed time = 0h 0m 0.125s
+    Total Routing: CPU time = 0h 0m 0.133s, Elapsed time = 0h 0m 0.133s
  Generate output files:
-    CPU time = 0h 0m 0.681s, Elapsed time = 0h 0m 0.68s
+    CPU time = 0h 0m 0.7s, Elapsed time = 0h 0m 0.7s
 
- Total Time and Memory Usage: CPU time = 0h 0m 2s, Elapsed time = 0h 0m 2s, Peak memory usage = 185MB
+ Total Time and Memory Usage: CPU time = 0h 0m 2s, Elapsed time = 0h 0m 2s, Peak memory usage = 143MB
 
 
 3. Resource Usage Summary
@@ -118,9 +118,9 @@ KeyX[1]    |           | 22/3          | Y          | in    | IOB22[A] | LVCMOS1
 KeyX[2]    |           | 21/3          | Y          | in    | IOB16[B] | LVCMOS18   | NA    | DOWN      | ON        | NONE       | NA         | NA         | NA              | NA            | 1.8       
 KeyX[3]    |           | 20/3          | Y          | in    | IOB16[A] | LVCMOS18   | NA    | DOWN      | ON        | NONE       | NA         | NA         | NA              | NA            | 1.8       
 led        |           | 10/0          | Y          | out   | IOT7[A]  | LVCMOS18   | 8     | NONE      | NA        | NA         | OFF        | NA         | NA              | NA            | 1.8       
-sclk_out   |           | 30/2          | Y          | out   | IOR15[A] | LVCMOS18   | 8     | NONE      | NA        | NA         | OFF        | NA         | OFF             | NA            | 1.8       
-nss_out    |           | 29/2          | Y          | out   | IOR15[B] | LVCMOS18   | 8     | NONE      | NA        | NA         | OFF        | NA         | OFF             | NA            | 1.8       
-sda_out    |           | 28/2          | Y          | out   | IOR17[A] | LVCMOS18   | 8     | NONE      | NA        | NA         | OFF        | NA         | OFF             | NA            | 1.8       
+sclk_out   |           | 30/2          | Y          | out   | IOR15[A] | LVCMOS18   | 12    | NONE      | NA        | NA         | OFF        | NA         | OFF             | NA            | 1.8       
+nss_out    |           | 29/2          | Y          | out   | IOR15[B] | LVCMOS18   | 12    | NONE      | NA        | NA         | OFF        | NA         | OFF             | NA            | 1.8       
+sda_out    |           | 28/2          | Y          | out   | IOR17[A] | LVCMOS18   | 12    | NONE      | NA        | NA         | OFF        | NA         | OFF             | NA            | 1.8       
 KeyY[0]    |           | 13/3          | Y          | out   | IOB4[A]  | LVCMOS18   | 8     | NONE      | NA        | NA         | OFF        | NA         | NA              | NA            | 1.8       
 KeyY[1]    |           | 17/3          | Y          | out   | IOB6[B]  | LVCMOS18   | 8     | NONE      | NA        | NA         | OFF        | NA         | NA              | NA            | 1.8       
 KeyY[2]    |           | 18/3          | Y          | out   | IOB13[A] | LVCMOS18   | 8     | NONE      | NA        | NA         | OFF        | NA         | NA              | NA            | 1.8       
@@ -176,9 +176,9 @@ Loc./Bank| Signal    | Dir.  | Site     | IO Type  | Drive | Pull Mode | PCI Cla
 33/2     | -         | in    | IOR9[B]  | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA         | NA              | NA            | 1.8  
 32/2     | -         | in    | IOR11[A] | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA         | NA              | NA            | 1.8  
 31/2     | -         | in    | IOR11[B] | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA         | NA              | NA            | 1.8  
-30/2     | sclk_out  | out   | IOR15[A] | LVCMOS18 | 8     | NONE      | NA        | NA         | OFF        | NA         | OFF             | NA            | 1.8  
-29/2     | nss_out   | out   | IOR15[B] | LVCMOS18 | 8     | NONE      | NA        | NA         | OFF        | NA         | OFF             | NA            | 1.8  
-28/2     | sda_out   | out   | IOR17[A] | LVCMOS18 | 8     | NONE      | NA        | NA         | OFF        | NA         | OFF             | NA            | 1.8  
+30/2     | sclk_out  | out   | IOR15[A] | LVCMOS18 | 12    | NONE      | NA        | NA         | OFF        | NA         | OFF             | NA            | 1.8  
+29/2     | nss_out   | out   | IOR15[B] | LVCMOS18 | 12    | NONE      | NA        | NA         | OFF        | NA         | OFF             | NA            | 1.8  
+28/2     | sda_out   | out   | IOR17[A] | LVCMOS18 | 12    | NONE      | NA        | NA         | OFF        | NA         | OFF             | NA            | 1.8  
 27/2     | -         | in    | IOR17[B] | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA         | NA              | NA            | 1.8  
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ======================================================================================================================================================================================
